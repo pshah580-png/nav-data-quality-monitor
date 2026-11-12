@@ -1,0 +1,39 @@
+name: Unpack project pack
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack nav project files into folders
+        run: |
+          set -e
+          if [ ! -f priyanka-shah-github-project-pack.zip ]; then echo "pack zip not found, nothing to do"; exit 0; fi
+          unzip -o priyanka-shah-github-project-pack.zip "nav-data-quality-monitor/*"
+          mv nav-data-quality-monitor/README.md nav-data-quality-monitor/requirements.txt .
+          mkdir -p data sql python output
+          mv nav-data-quality-monitor/data/* data/
+          mv nav-data-quality-monitor/sql/* sql/
+          mv nav-data-quality-monitor/python/* python/
+          mv nav-data-quality-monitor/output/* output/
+          rmdir nav-data-quality-monitor/data nav-data-quality-monitor/sql nav-data-quality-monitor/python nav-data-quality-monitor/output nav-data-quality-monitor
+          rm -f 01_completeness_and_duplicates.sql 02_reconciliation_and_fix.sql business_calendar.csv completeness_report.csv completeness_trend.png data_quality_summary.txt fund_master.csv nav_quality_pipeline.py nav_reported.csv nav_source.csv
+          rm -f priyanka-shah-github-project-pack.zip
+          rm -f .github/workflows/unpack.yml
+          rmdir .github/workflows .github 2>/dev/null || true
+          find . -type f | sort
+      - name: Commit unpacked files
+        run: |
+          git config user.name "pshah580-png"
+          git config user.email "pshah580-png@users.noreply.github.com"
+          git add -A
+          git status --short
+          git commit -m "Organize project into folders" || echo "nothing to commit"
+          git push
