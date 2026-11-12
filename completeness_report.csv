@@ -1,0 +1,5 @@
+month,expected_rows,reported_rows_before_fix,completeness_before_pct,rows_after_fix,completeness_after_pct,data_note
+2025-01,660,494,74.85,660,100.0,Synthetic demo data - portfolio demonstration
+2025-02,600,484,80.67,600,100.0,Synthetic demo data - portfolio demonstration
+2025-03,630,575,91.27,630,100.0,Synthetic demo data - portfolio demonstration
+2025-04,660,638,96.67,660,100.0,Synthetic demo data - portfolio demonstration

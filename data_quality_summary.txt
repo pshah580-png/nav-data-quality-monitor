@@ -1,0 +1,11 @@
+NAV Data Quality Monitor - Demo Run Summary
+Data: SYNTHETIC demo data - not employer data.
+
+Duplicate fund/date groups found : 41
+Non-business-day dated rows found: 30
+2025-01: 74.85% complete before fix -> 100.0% after reconciliation fix (494 -> 660 of 660 expected rows)
+2025-02: 80.67% complete before fix -> 100.0% after reconciliation fix (484 -> 600 of 600 expected rows)
+2025-03: 91.27% complete before fix -> 100.0% after reconciliation fix (575 -> 630 of 630 expected rows)
+2025-04: 96.67% complete before fix -> 100.0% after reconciliation fix (638 -> 660 of 660 expected rows)
+
+Demo-scenario result: reconciliation + date-mapping fix restores the report feed to full completeness on the synthetic dataset.

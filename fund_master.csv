@@ -1,0 +1,31 @@
+fund_id,fund_name,fund_type,currency,inception_year
+FND-001,Demo Equity Fund A1,Equity,USD,2011
+FND-002,Demo Fixed Income Fund A2,Fixed Income,USD,2012
+FND-003,Demo Balanced Fund A3,Balanced,USD,2013
+FND-004,Demo Index Fund A4,Index,USD,2014
+FND-005,Demo Sector Fund A5,Sector,USD,2015
+FND-006,Demo Equity Fund B1,Equity,USD,2016
+FND-007,Demo Fixed Income Fund B2,Fixed Income,USD,2017
+FND-008,Demo Balanced Fund B3,Balanced,USD,2018
+FND-009,Demo Index Fund B4,Index,USD,2019
+FND-010,Demo Sector Fund B5,Sector,USD,2020
+FND-011,Demo Equity Fund C1,Equity,USD,2021
+FND-012,Demo Fixed Income Fund C2,Fixed Income,USD,2010
+FND-013,Demo Balanced Fund C3,Balanced,USD,2011
+FND-014,Demo Index Fund C4,Index,USD,2012
+FND-015,Demo Sector Fund C5,Sector,USD,2013
+FND-016,Demo Equity Fund D1,Equity,USD,2014
+FND-017,Demo Fixed Income Fund D2,Fixed Income,USD,2015
+FND-018,Demo Balanced Fund D3,Balanced,USD,2016
+FND-019,Demo Index Fund D4,Index,USD,2017
+FND-020,Demo Sector Fund D5,Sector,USD,2018
+FND-021,Demo Equity Fund E1,Equity,USD,2019
+FND-022,Demo Fixed Income Fund E2,Fixed Income,USD,2020
+FND-023,Demo Balanced Fund E3,Balanced,USD,2021
+FND-024,Demo Index Fund E4,Index,USD,2010
+FND-025,Demo Sector Fund E5,Sector,USD,2011
+FND-026,Demo Equity Fund F1,Equity,USD,2012
+FND-027,Demo Fixed Income Fund F2,Fixed Income,USD,2013
+FND-028,Demo Balanced Fund F3,Balanced,USD,2014
+FND-029,Demo Index Fund F4,Index,USD,2015
+FND-030,Demo Sector Fund F5,Sector,USD,2016
